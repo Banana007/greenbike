@@ -1,0 +1,78 @@
+@import "part"
+@import "normalize"
+@import "libs"
+@import "vars"
+@import "fonts"
+
+html
+    scroll-behavior: smooth
+    width: 100%
+    height: 100%
+
+body
+    font-family: $neosans
+    overflow-x: hidden
+    font-weight: 400
+    width: 100%
+    height: 100%
+
+html, body
+    font-family: 'Roboto', sans-serif
+
+a
+    color: #1B1414
+    transition: all .2s ease
+
+*
+    transition: all .2s ease
+
+a:hover
+    color: #000000
+    text-decoration: none
+
+// header BEGIN
+.header
+    width: 100%
+    background-color: #3EB846
+    &-logoname
+        a
+            color: #fff
+            font-weight: 600
+            font-style: italic
+            font-weight: 600
+            &:hover
+                cursor: pointer
+                color: #C2F216
+    &-logoimage
+        a
+            img
+    &-social
+        a
+            padding: 4px 10px
+            .fa
+                font-size: 22px
+                color: #fff
+                font-weight: 600
+        a:nth-child(1)
+            &:hover
+                .fa
+                    color: #4c75a3
+        a:nth-child(2)
+            &:hover
+                .fa
+                    color: #e1306c
+        a:nth-child(3)
+            &:hover
+                .fa
+                    color: #3b5998
+    
+// header END
+
+// section__price BEGIN
+.section__price
+    
+// section__price END
+
+
+
+@import "media"
